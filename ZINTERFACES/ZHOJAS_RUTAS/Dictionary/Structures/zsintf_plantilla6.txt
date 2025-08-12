@@ -1,0 +1,41 @@
+@EndUserText.label : 'PLANTILLA6 PRODUCTIONRESOURCE'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_plantilla6 {
+
+  task_list_group                : plnnr;
+  group_counter                  : plnal;
+  sequence_no                    : plnfolge;
+  activity                       : vornr;
+  item_no_of_production_resource : psnfh;
+  valid_from                     : datuv;
+  prt_category                   : fhmar;
+  material                       : matnr18;
+  prt_plant                      : fhwrk;
+  campo1                         : abap.char(1);
+  campo2                         : abap.char(1);
+  campo3                         : abap.char(1);
+  campo4                         : abap.char(1);
+  campo5                         : abap.char(1);
+  campo6                         : abap.char(1);
+  ctrl_key                       : steuf;
+  campo7                         : abap.char(1);
+  campo8                         : abap.char(1);
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_prt_c.prt_measure_unit'
+  std_value_for_prt_qty          : mgvgw;
+  prt_measure_unit               : mgeinh;
+  formula_tot_qty                : cf_mgform;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_prt_c.prt_usage_value_unit'
+  std_usage_value_for_prt        : ewvgw;
+  prt_usage_value_unit           : eweinh;
+  formula_tot_usage              : cf_ewform;
+  campo9                         : abap.char(1);
+  campo10                        : abap.char(1);
+  campo11                        : abap.char(1);
+  campo12                        : abap.char(1);
+  campo13                        : abap.char(1);
+  campo14                        : abap.char(1);
+  prt_number                     : fhmnr33;
+  valid_to_date                  : datub;
+  prt_item_count                 : pzlfh;
+
+}

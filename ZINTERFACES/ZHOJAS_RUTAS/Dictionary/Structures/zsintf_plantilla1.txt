@@ -1,0 +1,26 @@
+@EndUserText.label : 'PLANTILLA1 TASK'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_plantilla1 {
+
+  task_list_group              : plnnr;
+  group_counter                : plnal;
+  description                  : plantext;
+  plant                        : werks_d;
+  valid_from                   : datuv;
+  task_list_usage              : pln_verwe;
+  task_list_status             : plnst;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_tsk_c.task_measure_unit'
+  lot_size_from                : losvn;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_tsk_c.task_measure_unit'
+  lot_size_to                  : losbs;
+  task_measure_unit            : plnme;
+  ident_key                    : qslwbez;
+  insppoint_partiallot_assgnmt : qppkztlzu;
+  dyn_modif_level              : qdynhead;
+  dyn_modif_rule               : qdynregel;
+  tdline                       : abap.char(1000);
+  object_change_type           : ccoaa;
+  valid_to_date                : datub;
+  row                          : abap.int4;
+
+}

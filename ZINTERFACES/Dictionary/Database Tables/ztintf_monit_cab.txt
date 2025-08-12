@@ -1,0 +1,23 @@
+@EndUserText.label : 'Monitor de Interfaces: Cabecera'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_CHARACTER_NUMERIC
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztintf_monit_cab {
+
+  key mandt       : mandt not null;
+  key id_proceso  : zde_id_proceso not null;
+  key id_interfaz : zde_id_intefaz not null
+    with value help zsh_nomb_intfaz
+      where id_interfaz = ztintf_monit_cab.id_interfaz
+        and nombre_archivo = ztintf_monit_cab.nombre_archivo;
+  estado          : zde_estado_intf;
+  mensaje_proceso : bapi_msg;
+  comentarios     : zde_comentarios;
+  nombre_archivo  : file_name
+    with value help zsh_nomb_archivo
+      where id_interfaz = ztintf_monit_cab.id_interfaz
+        and nombre_archivo = ztintf_monit_cab.nombre_archivo;
+  include zsintf_auditoria;
+
+}

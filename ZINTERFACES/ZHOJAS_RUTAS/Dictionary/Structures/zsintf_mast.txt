@@ -1,0 +1,10 @@
+@EndUserText.label : 'Datos MAST'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_mast {
+
+  material : matnr;
+  werks    : werks_d;
+  stlal    : stlal;
+  stlnr    : stnum;
+
+}

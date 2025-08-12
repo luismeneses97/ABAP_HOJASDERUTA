@@ -1,0 +1,22 @@
+@EndUserText.label : 'PLANTILLA3 SEQUENCE'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_plantilla3 {
+
+  task_list_group              : plnnr;
+  group_counter                : plnal;
+  sequence_no                  : plnfolge;
+  valid_from                   : datuv;
+  sequence_category            : folgenart;
+  reference_sequence           : bezfl;
+  alignment_key_for_scheduling : cp_auschl;
+  branch_operation             : vornr1;
+  return_operation             : vornr2;
+  description                  : flgtext;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_seq_c.task_measure_unit'
+  lot_sz_min                   : cp_flglosv;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_seq_c.task_measure_unit'
+  lot_sz_max                   : cp_flglosb;
+  tdline                       : tdline;
+  valid_to_date                : datub;
+
+}

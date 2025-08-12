@@ -1,0 +1,17 @@
+@EndUserText.label : 'Monitor de Interfaces: Detalle'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_CHARACTER_NUMERIC
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztintf_monit_det {
+
+  key mandt       : mandt not null;
+  key guid_error  : zde_guid_error not null;
+  key id_proceso  : zde_id_proceso not null;
+  key id_interfaz : zde_id_intefaz not null;
+  linea_archivo   : zdt_linea;
+  estado          : zde_estado_intf;
+  num_mensaje     : symsgno;
+  mensaje         : bapi_msg;
+
+}

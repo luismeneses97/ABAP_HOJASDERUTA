@@ -1,0 +1,10 @@
+@EndUserText.label : 'Auditoria de Procesos'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_CHARACTER_NUMERIC
+define structure zsintf_auditoria {
+
+  usuario        : sysuname;
+  fech_creacion  : syst_datum;
+  hora_creacion  : syst_uzeit;
+  fech_actualiza : syst_datum;
+
+}

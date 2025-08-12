@@ -1,0 +1,13 @@
+@EndUserText.label : 'Hojas ruta'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsinft_hojas_ruta {
+
+  plantilla1 : zttintf_plantilla1;
+  plantilla2 : zttintf_plantilla2;
+  plantilla3 : zttintf_plantilla3;
+  plantilla4 : zttintf_plantilla4;
+  plantilla5 : zttintf_plantilla5;
+  plantilla6 : zttintf_plantilla6;
+  plantilla7 : zttintf_plantilla7;
+
+}

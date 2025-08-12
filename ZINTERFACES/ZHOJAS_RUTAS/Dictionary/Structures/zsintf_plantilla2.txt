@@ -1,0 +1,12 @@
+@EndUserText.label : 'PLANTILLA2 MATERIALTASKALLOCATION'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_plantilla2 {
+
+  task_list_group : plnnr;
+  group_counter   : plnal;
+  material        : matnr;
+  plant           : werks_d;
+  valid_from      : datuv;
+  valid_to_date   : datub;
+
+}

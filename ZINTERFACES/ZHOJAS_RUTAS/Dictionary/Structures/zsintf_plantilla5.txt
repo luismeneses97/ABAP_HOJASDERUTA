@@ -1,0 +1,28 @@
+@EndUserText.label : 'PLANTILLA5 COMPONENTALLOCATION'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsintf_plantilla5 {
+
+  task_list_group   : plnnr;
+  group_counter     : plnal;
+  sequence_no       : plnfolge;
+  activity          : vornr;
+  bom_type          : stlty;
+  campo1            : abap.char(1);
+  plant             : werks_d;
+  alternative_bom   : stalt;
+  material_external : mgv_material_external;
+  campo2            : abap.char(1);
+  item_id           : itmid;
+  item_no           : sposn;
+  campo3            : abap.char(1);
+  material          : matnr18;
+  campo4            : abap.char(1);
+  campo5            : abap.char(1);
+  valid_from        : datuv;
+  campo6            : abap.char(1);
+  valid_to_date     : datub;
+  @Semantics.quantity.unitOfMeasure : 'bapi1012_com_c.comp_unit'
+  comp_qty          : kmpmg;
+  comp_unit         : kmpme;
+
+}
